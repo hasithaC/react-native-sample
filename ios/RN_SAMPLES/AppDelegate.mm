@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import "RNSplashScreen.h" 
 
 @implementation AppDelegate
 
@@ -12,6 +13,8 @@
   self.initialProps = @{};
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
+
+  [RNSplashScreen show]; 
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
